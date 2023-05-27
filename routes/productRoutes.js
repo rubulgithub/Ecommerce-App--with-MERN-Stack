@@ -44,10 +44,4 @@ router.get("/related-product/:pid/:cid",relatedProductController);
 //category wise product
 router.get("/product-category/:slug",productCategoryController)
 
-//payments route
-//token
-router.get("/braintree/token", braintreeTokenController)
-
-//payment
-router.post("/braintree/payment", requireSignIn, brainTreePaymentController)
 export default router;
