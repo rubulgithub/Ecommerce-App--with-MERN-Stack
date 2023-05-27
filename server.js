@@ -5,8 +5,9 @@ import categoryRoutes from "./routes/categoryRoutes.js"
 import productRoutes from "./routes/productRoutes.js"
 import cors from "cors";
 import dotenv from "dotenv";
-import path from "path"
+import path from "path";
 import {fileURLToPath} from "url";
+
 dotenv.config()
 
 const app=express();
@@ -16,7 +17,8 @@ connectDB();
 
 //esmodeule fix
 const __filename=fileURLToPath(import.meta.url);
-const __dirname=path.direname(__filename)
+const __dirname=path.direname(__filename);
+
 // Middleware
 app.use(express.json());
 app.use(cors());
