@@ -18,7 +18,7 @@ connectDB();
 //esmodeule fix
 const __dirname = path.resolve();
 const __filename=fileURLToPath(import.meta.url);
-const __dirname=path.direname(__filename);
+const __dirname=direname(__filename);
 
 // Middleware
 app.use(express.json());
